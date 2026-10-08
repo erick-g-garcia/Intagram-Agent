@@ -27,37 +27,18 @@ see it.
 
 ## Install
 
-Original upstream installation targeted ChatGPT. This fork is adapted for ChatGPT and local Python execution.
-
-```
-https://github.com/Jakeschincariol/instagram-agent-skill
-
-Install this skill, then confirm /ig-reel works.
-```
-
-For local use:
+Clone this ChatGPT fork:
 
 ```bash
-git clone https://github.com/Jakeschincariol/instagram-agent-skill.git
-cp -r instagram-agent-skill/skills/ig-* ./skills/
+git clone https://github.com/erick-g-garcia/Intagram-Agent.git
+cd Intagram-Agent
 ```
 
-Or as a plugin:
+The repository keeps each capability in `skills/ig-*/SKILL.md`. In a ChatGPT or agent workflow, read `CHATGPT.md` first, then the relevant skill. Project state lives under `instagram/`.
 
-```
-/plugin marketplace add Jakeschincariol/instagram-agent-skill
-/plugin install instagram-agent
-```
+Before producing personalized content, fill `instagram/VOICE.md` manually or derive it from several examples of your own Reels/captions. The account profile and strategy live in `instagram/PROFILE.md` and `instagram/CONTENT_STRATEGY.md`.
 
-Project-local instead of global: copy the same folders into your project's `skills/` directory. No ChatGPT Code at all? Paste any single `SKILL.md` at the top
-of a chat and it runs as a mode. You lose the five Python tools, which is most
-of the point of `/ig-reel` and `/ig-human`, but the rest works.
-
-Then spend ten minutes on `templates/voice.md`. Copy it to
-`instagram/VOICE.md` and fill it in, or send ChatGPT three of your own
-reels and say "write my voice.md from these". Every skill reads that file. It
-matters more here than on other platforms, because you have to say the words
-out loud.
+The included Python utilities are local and dependency-free. They can be run directly from their skill folders.
 
 ## The thirteen
 
